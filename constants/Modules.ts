@@ -1,0 +1,63 @@
+import { Module } from "@/types";
+export const AVAILABLE_MODULES: Module[] = [
+  {
+    id: "speakers",
+    name: "Speakers",
+    description: "Display event speakers with profiles",
+    icon: "🎤",
+    category: "Events",
+    tags: ["events", "people", "speakers"],
+    defaultProps: {
+    //   layout: "grid",
+    //   showOnlyFeatured: false,
+    //   limit: 8,
+    //   showBio: true,
+    //   showSocialLinks: true,
+      title: "Featured Speakers",
+      description: "Meet our amazing speakers and industry experts",
+    },
+  },
+  {
+    id: "upcoming_events",
+    name: "ongoing Events",
+    description: "Display featured upcoming events",
+    icon: "⏰",
+    category: "Events",
+    tags: ["events", "featured", "upcoming"],
+    defaultProps: {
+    //   limit: 3,
+      title: "upcoming events(featured)",
+      description: "Get your tickets now for these exciting upcoming events.",
+    },
+  },
+  {
+    id: "events",
+    name: "Events",
+    description: "Show all events (non-featured)",
+    icon: "📅",
+    category: "Events",
+    tags: ["schedule", "calendar", "all"],
+    defaultProps: {
+    //   view: "grid",
+    //   limit: 6,
+    //   showFeatured: false,
+      title: "All Events",
+      description: "Discover amazing events happening near you",
+    },
+  },
+  {
+    id: "tickets",
+    name: "Tickets",
+    description: "Ticket purchasing module",
+    icon: "🎫",
+    category: "Tickets",
+    tags: ["purchase", "booking"],
+    defaultProps: {
+    //   showOnlyActive: true,
+    //   layout: "grid",
+      title: "Available Tickets",
+      description: "Choose the perfect ticket for your event experience",
+      buttonText: "Buy Now",
+    },
+  },
+];
